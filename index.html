@@ -3,15 +3,84 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style/responsive.css">
+    <link rel="stylesheet" href="src/style/responsive.css" />
     <link rel="stylesheet" href="src/style/home.css" />
     <title>Landing-Page-God-Of-War</title>
   </head>
   <body>
     <section class="hero" id="hero">
-      <h1>Landing-Page-God-Of-War</h1>
-      <p>O deus da guerra que redefiniu a vingança</p>
-      <button class="cta-button" onclick="scrollToShowcase()"></button>
+      <div class="hero-content">
+        <h1>Landing-Page-God-Of-War</h1>
+        <p>O deus da guerra que redefiniu a vingança</p>
+        <button class="cta-button" onclick="scrollToShowcase()">
+          Explorar Lenda
+        </button>
+      </div>
+      <div class="scroll-indicator"></div>
+    </section>
+
+    <section class="showcase" id="showcase">
+      <div class="showcase-content">
+        <h2 class="showcase-title">O Fantasma de Esparta</h2>
+      </div>
+      <div class="wallpaper-gallery">
+        <div class="wallpaper-item" onclick="openModal('modal1')">
+          <div class="wallpaper-placeholder">
+            Kratos Clássico<br />
+            <small>Era Grega</small>
+          </div>
+        </div>
+        <div class="wallpaper-item" onclick="openModal('modal2')">
+          <div class="wallpaper-placeholder">
+            Kratos e Atreus<br />
+            <small>Em Guerra</small>
+          </div>
+        </div>
+        <div class="wallpaper-item" onclick="openModal('modal3')">
+          <div class="wallpaper-placeholder">
+            Kratos Ragnarok<br />
+            <small>Novo Visual</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="character-stats">
+        <h3 style="text-align: center; margin-bottom: 30px">
+          Atributos de Guerreiro
+        </h3>
+        <div class="stats-grid-kratos">
+          <div class="stats-kratos">
+            <div class="stat-icon">💪</div>
+            <div class="stat-value">100</div>
+            <div class="stat-name">Força</div>
+          </div>
+          <div class="stats-kratos">
+            <div class="stat-icon">🛡️</div>
+            <div class="stat-value">95</div>
+            <div class="stat-name">Resistência</div>
+          </div>
+          <div class="stats-kratos">
+            <div class="stat-icon">⚔️</div>
+            <div class="stat-value">90</div>
+            <div class="stat-name">Combate</div>
+          </div>
+          <div class="stats-kratos">
+            <div class="stat-icon">🔥</div>
+            <div class="stat-value">90</div>
+            <div class="stat-name">Fúria</div>
+          </div>
+          <div class="stats-kratos">
+            <div class="stat-icon">🧠</div>
+            <div class="stat-value">85</div>
+            <div class="stat-name">Resistência</div>
+          </div>
+          <div class="stats-kratos">
+            <div class="stat-icon">🧡</div>
+            <div class="stat-value">90</div>
+            <div class="stat-name">Paternidade</div>
+          </div>
+        </div>
+      </div>
     </section>
   </body>
 </html>

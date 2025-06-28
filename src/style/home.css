@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #0a0a0a 50%, #2a0a0a 100%);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><defs><radialGradient id="bg" cx="50%" cy="50%"><stop offset="0%" stop-color="%23ff4444"/><stop offset="100%" stop-color="%23000"/></radialGradient></defs><rect width="800" height="600" fill="url(%23bg)" opacity="0.3"/><circle cx="400" cy="300" r="200" fill="%23ff0000" opacity="0.1"/></svg>');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(
+    45deg,
+    rgba(139, 0, 0, 0.1) 25%,
+    transparent 25%,
+    transparent 75%,
+    rgba(139, 0, 0, 0.1) 75%
+  );
+  background-size: 60px 60px;
+  animation: slidePattern 20s linear infinite;
+}
+
+@keyframes slidePattern {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 60px 60px;
+  }
+}
+
+.hero-content {
+  text-align: center;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 8rem;
+  font-weight: bold;
+  text-shadow: 4px 4px 8px rgba(139, 0, 0, 0.8);
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, #ff6b6b, #d63031, #74b9ff, #ff6b6b);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 4s ease-in-out,
+    glow 3s ease-in-out infinite alternate;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes glow {
+  from {
+    filter: drop-shadow(0 0 20px rgba(139, 0, 0, 0.5));
+  }
+  to {
+    filter: drop-shadow(0 0 40px rgba(139, 0, 0, 9));
+  }
+}
+

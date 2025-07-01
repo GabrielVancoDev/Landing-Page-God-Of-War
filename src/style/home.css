@@ -17,8 +17,8 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
-    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><defs><radialGradient id="bg" cx="50%" cy="50%"><stop offset="0%" stop-color="%23ff4444"/><stop offset="100%" stop-color="%23000"/></radialGradient></defs><rect width="800" height="600" fill="url(%23bg)" opacity="0.3"/><circle cx="400" cy="300" r="200" fill="%23ff0000" opacity="0.1"/></svg>');
+  background: linear-gradient(rgba(48, 19, 19, 0.6), rgba(0, 0, 0, 0.4)),
+    url("/src/img/image.png" );
   background-size: cover;
   background-position: center;
 }
@@ -89,4 +89,3 @@ body {
     filter: drop-shadow(0 0 40px rgba(139, 0, 0, 9));
   }
 }
-
